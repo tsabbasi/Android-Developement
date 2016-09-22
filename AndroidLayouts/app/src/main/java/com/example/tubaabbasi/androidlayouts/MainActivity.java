@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     LinearLayout background;
     Button redBtn, tealBtn;
+    TextView buttonTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         background = (LinearLayout) findViewById(R.id.background);
         redBtn = (Button) findViewById(R.id.redBtn);
         tealBtn = (Button) findViewById(R.id.tealBtn);
+        buttonTextView = (TextView) findViewById(R.id.buttonTextView);
 
         redBtn.setOnClickListener(new View.OnClickListener() {
 
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick (View view) {
                 background.setBackgroundColor(Color.parseColor("#e16b60"));
+                buttonTextView.setText("Button 1 Clicked!");
 
             }
         });
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick (View view) {
                 background.setBackgroundColor(Color.parseColor("#88cccb"));
+                buttonTextView.setText("Button 2 Clicked!");
 
             }
         });
