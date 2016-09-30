@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tubaabbasi.tealeamanclassquiz.MainActivity"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/instructions_heading"
+        android:textAlignment="center"
+        android:id="@+id/instructions_heading"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ade2d4"
+        android:textColor="#4d6f76"
+        android:textSize="30px" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/instructions_body"
+        android:id="@+id/instructions_body"
+        android:layout_alignParentTop="true"
+        android:background="#ade2d4"
+        android:textColor="#4d6f76"
+        android:textSize="25px"
+        android:paddingLeft="5dp"
+        android:paddingRight="60dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/instructions_body"
+        android:background="#b0e4d6"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="1"
+                android:id="@+id/textView"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:textSize="20sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="2"
+                android:id="@+id/textView2"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:textSize="20sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="3"
+                android:id="@+id/textView3"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:textSize="20sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="4"
+                android:id="@+id/textView4"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText4"
+                android:textSize="20sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="5"
+                android:id="@+id/textView5"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText5"
+                android:textSize="20sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="6"
+                android:id="@+id/textView6"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText6"
+                android:textSize="20sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_above="@+id/tableLayout"
+        android:layout_alignRight="@+id/instructions_body"
+        android:layout_alignEnd="@+id/instructions_body"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:text="@+id/attach_button"
+        android:background="#26ca27" />
+
+</RelativeLayout>
