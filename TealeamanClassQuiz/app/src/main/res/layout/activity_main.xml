@@ -17,6 +17,7 @@
         android:text="@string/instructions_heading"
         android:textAlignment="center"
         android:id="@+id/instructions_heading"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="#ade2d4"
@@ -44,8 +45,9 @@
         android:background="#b0e4d6"
         android:layout_marginTop="5dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/tableLayout">
+        android:layout_alignParentEnd="false"
+        android:id="@+id/tableLayout"
+        android:layout_marginBottom="45dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -217,21 +219,33 @@
         </TableRow>
 
 
-
-
     </TableLayout>
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:text="Attach"
+        android:textStyle="bold"
         android:id="@+id/button"
         android:layout_above="@+id/tableLayout"
-        android:layout_alignRight="@+id/instructions_body"
-        android:layout_alignEnd="@+id/instructions_body"
-        android:layout_marginRight="35dp"
-        android:layout_marginEnd="35dp"
-        android:text="@+id/attach_button"
-        android:background="#26ca27" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#26ca27"
+        android:textColor="#f3ead9"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button2"
+        android:backgroundTint="#fea92a"
+        android:textColor="#f3ead9"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

@@ -3,4 +3,5 @@
     <string name="instructions_heading">Rules and Instructions\n></string>
     <string name="instructions_body"><li>• Once you start answering a question, finish typing before the timer goes off</li>\n<li>• Do not discuss the questions with your classmates</li>\n<li>• Attach a file only if the instructor asks</li></string>
     <string name="attach_button">Attach</string>
+    <string name="main_title">Class Quiz: 01-0923</string>
 </resources>
