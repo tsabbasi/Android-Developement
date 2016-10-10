@@ -22,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:background="#ade2d4"
         android:textColor="#4d6f76"
-        android:textSize="30px" />
+        android:textSize="35px" />
 
     <TextView
         android:layout_width="fill_parent"
@@ -34,20 +34,20 @@
         android:layout_alignParentTop="true"
         android:background="#ade2d4"
         android:textColor="#4d6f76"
-        android:textSize="25px"
+        android:textSize="30px"
         android:paddingLeft="5dp"
-        android:paddingRight="60dp" />
+        android:paddingRight="70dp" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/instructions_body"
         android:background="#b0e4d6"
-        android:layout_marginTop="5dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="false"
         android:id="@+id/tableLayout"
-        android:layout_marginBottom="45dp">
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="2dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                 android:id="@+id/textView"
                 android:background="#3c5749"
                 android:textColor="#dcc63c"
-                android:textIsSelectable="true"
+                android:textIsSelectable="false"
                 android:textSize="20sp"
                 android:layout_column="1"
                 android:textAlignment="center"
@@ -71,8 +71,8 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
-                android:textSize="20sp"
+                android:id="@+id/row1"
+                android:textSize="15sp"
                 android:layout_column="2"
                 android:layout_marginRight="5dp" />
 
@@ -100,8 +100,8 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText2"
-                android:textSize="20sp"
+                android:id="@+id/row2"
+                android:textSize="15sp"
                 android:layout_column="2"
                 android:layout_marginRight="5dp" />
         </TableRow>
@@ -128,8 +128,8 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText3"
-                android:textSize="20sp"
+                android:id="@+id/row3"
+                android:textSize="15sp"
                 android:layout_column="2"
                 android:layout_marginRight="5dp" />
         </TableRow>
@@ -156,8 +156,8 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText4"
-                android:textSize="20sp"
+                android:id="@+id/row4"
+                android:textSize="15sp"
                 android:layout_column="2"
                 android:layout_marginRight="5dp" />
         </TableRow>
@@ -184,8 +184,8 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText5"
-                android:textSize="20sp"
+                android:id="@+id/row5"
+                android:textSize="15sp"
                 android:layout_column="2"
                 android:layout_marginRight="5dp" />
         </TableRow>
@@ -212,8 +212,120 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText6"
+                android:id="@+id/row6"
+                android:textSize="15sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="7"
+                android:id="@+id/textView7"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
                 android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/row7"
+                android:textSize="15sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="8"
+                android:id="@+id/textView8"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/row8"
+                android:textSize="15sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="9"
+                android:id="@+id/textView9"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/row9"
+                android:textSize="15sp"
+                android:layout_column="2"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="10"
+                android:id="@+id/textView10"
+                android:background="#3c5749"
+                android:textColor="#dcc63c"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/row10"
+                android:textSize="15sp"
                 android:layout_column="2"
                 android:layout_marginRight="5dp" />
         </TableRow>
@@ -223,29 +335,31 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="70dp"
+        android:layout_width="68dp"
         android:layout_height="wrap_content"
         android:text="Attach"
         android:textStyle="bold"
-        android:id="@+id/button"
+        android:id="@+id/attachButton"
         android:layout_above="@+id/tableLayout"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:backgroundTint="#26ca27"
         android:textColor="#f3ead9"
-        android:layout_marginRight="5dp" />
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="70dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Submit"
-        android:id="@+id/button2"
+        android:id="@+id/submitButton"
         android:backgroundTint="#fea92a"
         android:textColor="#f3ead9"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
 
 </RelativeLayout>
