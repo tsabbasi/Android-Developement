@@ -3,8 +3,6 @@ package com.example.tubaabbasi.tealeamanclassquiz;
 import android.content.Intent;
 import android.app.Activity;
 import android.net.Uri;
-//import android.support.v7.app.AppCompatActivity;
-//import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -39,8 +37,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
 
         submitButton = (Button) findViewById(R.id.submitButton);
         textField1 = (EditText) findViewById(R.id.row1);
