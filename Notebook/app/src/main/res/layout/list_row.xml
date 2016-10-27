@@ -7,4 +7,35 @@
     android:paddingTop="10dp"
     android:paddingBottom="10dp">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemNoteImg"
+        android:src="@drawable/one"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Note Title"
+            android:id="@+id/listItemNoteTitle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/listItemNoteImg"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Text Goes Here"
+            android:id="@+id/listItemNoteBody"
+            android:layout_below="@+id/listItemNoteTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/listItemNoteImg"
+            android:ellipsize="end"/>
+
 </RelativeLayout>
