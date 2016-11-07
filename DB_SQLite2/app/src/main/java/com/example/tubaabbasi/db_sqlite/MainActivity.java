@@ -72,6 +72,14 @@ public class MainActivity extends ActionBarActivity {
 
                 startActivity(intent);
                 return true;
+//            case R.id.item2:Bundle dataBundle = new Bundle();
+//                dataBundle.putInt("id", 1);
+//
+//                Intent intent = new Intent(getApplicationContext(),DisplayContact.class);
+//                intent.putExtras(dataBundle);
+//
+//                startActivity(intent);
+//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
