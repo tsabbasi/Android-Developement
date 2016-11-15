@@ -43,8 +43,7 @@ public class DisplayContact extends Activity {
         mydb = new DBHelper(this);
 
         Bundle extras = getIntent().getExtras();
-        if(extras !=null)
-        {
+        if(extras !=null) {
             int Value = extras.getInt("id");
 
             if(Value>0){
@@ -59,8 +58,7 @@ public class DisplayContact extends Activity {
                 String stree = rs.getString(rs.getColumnIndex(DBHelper.CONTACTS_COLUMN_STREET));
                 String plac = rs.getString(rs.getColumnIndex(DBHelper.CONTACTS_COLUMN_CITY));
 
-                if (!rs.isClosed())
-                {
+                if (!rs.isClosed())  {
                     rs.close();
                 }
                 Button b = (Button)findViewById(R.id.button1);
@@ -94,25 +92,20 @@ public class DisplayContact extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         Bundle extras = getIntent().getExtras();
 
-        if(extras !=null)
-        {
+        if(extras !=null) {
             int Value = extras.getInt("id");
             if(Value>0){
                 getMenuInflater().inflate(R.menu.display_contact, menu);
-            }
-
-            else{
+            } else{
                 getMenuInflater().inflate(R.menu.main_menu, menu);
             }
         }
         return true;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
+    public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
-        switch(item.getItemId())
-        {
+        switch(item.getItemId()) {
             case R.id.Edit_Contact:
                 Button b = (Button)findViewById(R.id.button1);
                 b.setVisibility(View.VISIBLE);
@@ -144,7 +137,8 @@ public class DisplayContact extends Activity {
                         .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 mydb.deleteContact(id_To_Update);
-                                Toast.makeText(getApplicationContext(), "Deleted Successfully", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Deleted Successfully",
+                                        Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                                 startActivity(intent);
                             }
@@ -154,6 +148,7 @@ public class DisplayContact extends Activity {
                                 // User cancelled the dialog
                             }
                         });
+
                 AlertDialog d = builder.create();
                 d.setTitle("Are you sure");
                 d.show();
@@ -165,29 +160,29 @@ public class DisplayContact extends Activity {
         }
     }
 
-    public void run(View view)
-    {
+    public void run(View view) {
         Bundle extras = getIntent().getExtras();
-        if(extras !=null)
-        {
+        if(extras !=null) {
             int Value = extras.getInt("id");
             if(Value>0){
-                if(mydb.updateContact(id_To_Update,name.getText().toString(), phone.getText().toString(), email.getText().toString(), street.getText().toString(), place.getText().toString())){
+                if(mydb.updateContact(id_To_Update,name.getText().toString(),
+                        phone.getText().toString(), email.getText().toString(),
+                        street.getText().toString(), place.getText().toString())){
                     Toast.makeText(getApplicationContext(), "Updated", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(intent);
-                }
-                else{
+                } else{
                     Toast.makeText(getApplicationContext(), "not Updated", Toast.LENGTH_SHORT).show();
                 }
-            }
-            else{
-                if(mydb.insertContact(name.getText().toString(), phone.getText().toString(), email.getText().toString(), street.getText().toString(), place.getText().toString())){
-                    Toast.makeText(getApplicationContext(), "done", Toast.LENGTH_SHORT).show();
-                }
-
-                else{
-                    Toast.makeText(getApplicationContext(), "not done", Toast.LENGTH_SHORT).show();
+            } else{
+                if(mydb.insertContact(name.getText().toString(), phone.getText().toString(),
+                        email.getText().toString(), street.getText().toString(),
+                        place.getText().toString())){
+                    Toast.makeText(getApplicationContext(), "done",
+                            Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText(getApplicationContext(), "not done",
+                            Toast.LENGTH_SHORT).show();
                 }
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
@@ -195,4 +190,3 @@ public class DisplayContact extends Activity {
         }
     }
 }
-

@@ -3,7 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="Add_New_Contact">Add New Contact</string>
-    <string name="Add_New_Account">Add New Contact</string>
+    <string name="Add_New_Account">Add New Account</string>
     <string name="edit">Edit Contact</string>
     <string name="delete">Delete Contact</string>
     <string name="title_activity_display_contact">DisplayContact</string>
@@ -14,6 +14,7 @@
     <string name="country">City/State/Zip</string>
     <string name="save">Save Contact</string>
     <string name="deleteContact">Are you sure, you want to delete it.</string>
+    <string name="deleteAccount">Are you sure, you want to delete it.</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 </resources>

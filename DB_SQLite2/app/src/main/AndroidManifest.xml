@@ -20,6 +20,8 @@
 
         <activity android:name=".DisplayContact"/>
 
+        <activity android:name=".DisplayAccount"/>
+
     </application>
 
 </manifest>

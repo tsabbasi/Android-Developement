@@ -1,81 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    tools:context=".DisplayAccount" >
 
-    <TableLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_height="370dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+        <EditText
+            android:id="@+id/editTextAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="82dp"
+            android:ems="10"
+            android:inputType="text" >
+        </EditText>
 
-            <TextView
-                android:text="Account Name"
-                android:padding="3dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="10dp" />
-            <TextView
-                android:text="Username"
-                android:gravity="center"
-                android:padding="3dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="25dp" />
-            <TextView
-                android:text="Password"
-                android:gravity="right"
-                android:padding="3dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+        <TextView
+            android:id="@+id/textViewAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="false"
+            android:layout_alignBottom="@+id/editTextAccountName" />
 
-        </TableRow>
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="run"
+            android:text="@string/save"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextUsername"
+            android:layout_alignLeft="@+id/textViewAccountName"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <EditText
-                android:id="@+id/editTextAccountName"
-                android:text="Account Name"
-                android:padding="3dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="10dp" />
-            <EditText
-                android:id="@+id/editTextUsername"
-                android:text="Username"
-                android:gravity="center"
-                android:padding="3dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="25dp" />
-            <EditText
-                android:id="@+id/editTextPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Password"
-                android:gravity="right"
-                android:padding="3dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewUsername"
+            android:text="Password"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBottom="@+id/editTextPassword" />
 
-        </TableRow>
-    </TableLayout>
-</RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUsername"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_alignLeft="@+id/editTextAccountName">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPassword"
+            android:layout_below="@+id/editTextAccountName"
+            android:ems="10"
+            android:inputType="text" />
+
+    </RelativeLayout>
+</ScrollView>
